@@ -1,0 +1,262 @@
+2025-03-02 13:58:49,395 - main - INFO - Starting Deriv Trading Bot...
+2025-03-02 13:58:49,395 - main - INFO - === SIMULATION MODE ENABLED ===
+2025-03-02 13:58:49,396 - main - INFO - Using simulated API responses for placeholder tokens.
+2025-03-02 13:58:49,396 - main - INFO - To use real API connection, set ENABLE_SIMULATION=false in environment variables and provide valid API tokens
+2025-03-02 13:58:49,396 - main - INFO - =============================
+2025-03-02 13:58:49,396 - api_connection - INFO - Initialized API connection for demo account
+2025-03-02 13:58:49,397 - api_connection - ERROR - Invalid API token format. Cannot connect.
+2025-03-02 13:58:49,397 - main - ERROR - Failed to connect to Deriv API
+2025-03-02 13:58:49,397 - main - INFO - Disconnected from API.
+2025-03-02 13:58:55,178 - main - INFO - Starting Deriv Trading Bot...
+2025-03-02 13:58:55,178 - main - INFO - === SIMULATION MODE ENABLED ===
+2025-03-02 13:58:55,178 - main - INFO - Using simulated API responses for placeholder tokens.
+2025-03-02 13:58:55,178 - main - INFO - To use real API connection, set ENABLE_SIMULATION=false in environment variables and provide valid API tokens
+2025-03-02 13:58:55,178 - main - INFO - =============================
+2025-03-02 13:58:55,178 - api_connection - INFO - Initialized API connection for demo account
+2025-03-02 13:58:55,179 - api_connection - ERROR - Invalid API token format. Cannot connect.
+2025-03-02 13:58:55,179 - main - ERROR - Failed to connect to Deriv API
+2025-03-02 13:58:55,179 - main - INFO - Disconnected from API.
+2025-03-02 14:21:41,883 - api_test - INFO - Starting Deriv API connection tests
+2025-03-02 14:21:41,883 - api_test - WARNING - ENABLE_SIMULATION is set to true, but we'll disable it for this test
+2025-03-02 14:21:41,883 - api_test - INFO - === TESTING DEMO ACCOUNT ===
+2025-03-02 14:21:41,883 - api_test - INFO - Testing connection with demo account
+2025-03-02 14:21:41,884 - api_connection - INFO - Initialized API connection for demo account
+2025-03-02 14:21:41,884 - api_test - INFO - API Token diagnostic: Token length: 15 chars, Composition: 13 letters, 2 digits, 0 special chars, Token preview: VW2*********OGp
+2025-03-02 14:21:41,884 - api_test - INFO - Executing comprehensive API connection test...
+2025-03-02 14:21:41,884 - api_connection - INFO - Testing API connection...
+2025-03-02 14:21:41,885 - api_connection - INFO - API Token diagnostic: Token length: 15 chars, Composition: 13 letters, 2 digits, 0 special chars, Token preview: VW2*********OGp
+2025-03-02 14:21:41,885 - api_connection - INFO - Connecting to Deriv API (wss://ws.binaryws.com/websockets/v3)...
+2025-03-02 14:21:42,317 - api_connection - ERROR - Failed to connect to Deriv API: server rejected WebSocket connection: HTTP 401
+Traceback (most recent call last):
+  File "/home/runner/workspace/modules/api_connection.py", line 112, in connect
+    self.websocket = await websockets.connect(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/websockets/asyncio/client.py", line 543, in __await_impl__
+    await self.connection.handshake(
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/websockets/asyncio/client.py", line 114, in handshake
+    raise self.protocol.handshake_exc
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/websockets/client.py", line 325, in parse
+    self.process_response(response)
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/websockets/client.py", line 142, in process_response
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 401
+2025-03-02 14:21:42,326 - api_test - INFO - ❌ Connection: Could not establish connection to API
+2025-03-02 14:21:42,330 - api_test - INFO - ❌ Authentication: 
+2025-03-02 14:21:42,334 - api_test - INFO - ❌ Account Info: 
+2025-03-02 14:21:42,338 - api_test - INFO - ❌ Market Data: 
+2025-03-02 14:21:42,338 - api_test - INFO - ❌ Ping: 
+2025-03-02 14:21:42,339 - api_test - INFO - ❌ Reconnection: 
+2025-03-02 14:21:42,339 - api_test - ERROR - ❌ ALL TESTS FAILED
+2025-03-02 14:21:42,339 - api_test - ERROR - ❌ Demo account tests FAILED
+2025-03-02 14:21:42,339 - api_test - INFO - 
+=== TEST SUMMARY ===
+2025-03-02 14:21:42,340 - api_test - INFO - Demo account: ❌ FAILED
+2025-03-02 14:21:42,340 - api_test - INFO - Real account: ⚠️ NOT TESTED (Demo tests failed)
+2025-03-02 14:21:42,340 - api_test - INFO - 
+Overall status: ❌ TESTS FAILED
+2025-03-02 14:34:39,856 - main - INFO - Starting Deriv Trading Bot...
+2025-03-02 14:34:39,856 - main - INFO - === SIMULATION MODE ENABLED ===
+2025-03-02 14:34:39,857 - main - INFO - Using simulated API responses for placeholder tokens.
+2025-03-02 14:34:39,857 - main - INFO - To use real API connection, set ENABLE_SIMULATION=false in environment variables and provide valid API tokens
+2025-03-02 14:34:39,857 - main - INFO - =============================
+2025-03-02 14:34:39,857 - api_connection - INFO - Initialized API connection for demo account
+2025-03-02 14:34:39,857 - api_connection - INFO - API Token diagnostic: Token length: 15 chars, Composition: 13 letters, 2 digits, 0 special chars, Token preview: VW2*********OGp
+2025-03-02 14:34:39,857 - api_connection - INFO - Connecting to Deriv API (wss://ws.binaryws.com/websockets/v3)...
+2025-03-02 14:34:40,269 - api_connection - ERROR - Failed to connect to Deriv API: server rejected WebSocket connection: HTTP 401
+Traceback (most recent call last):
+  File "/home/runner/workspace/modules/api_connection.py", line 112, in connect
+    self.websocket = await websockets.connect(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/websockets/asyncio/client.py", line 543, in __await_impl__
+    await self.connection.handshake(
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/websockets/asyncio/client.py", line 114, in handshake
+    raise self.protocol.handshake_exc
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/websockets/client.py", line 325, in parse
+    self.process_response(response)
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/websockets/client.py", line 142, in process_response
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 401
+2025-03-02 14:34:40,271 - main - ERROR - Failed to connect to Deriv API
+2025-03-02 14:34:40,271 - main - INFO - Disconnected from API.
+2025-03-02 14:53:48,748 - main - INFO - Starting Deriv Trading Bot...
+2025-03-02 14:53:48,748 - main - INFO - === SIMULATION MODE ENABLED ===
+2025-03-02 14:53:48,748 - main - INFO - Using simulated API responses for placeholder tokens.
+2025-03-02 14:53:48,749 - main - INFO - To use real API connection, set ENABLE_SIMULATION=false in environment variables and provide valid API tokens
+2025-03-02 14:53:48,749 - main - INFO - =============================
+2025-03-02 14:53:48,749 - api_connection - INFO - Initialized API connection for demo account
+2025-03-02 14:53:48,749 - api_connection - INFO - API Token diagnostic: Token length: 15 chars, Composition: 13 letters, 2 digits, 0 special chars, Format: Valid format, Token preview: VW2*********OGp
+2025-03-02 14:53:48,749 - api_connection - INFO - Connecting to Deriv API (wss://ws.demo.derivapi.com/websockets/v3)...
+2025-03-02 14:53:48,781 - api_connection - ERROR - Failed to connect to Deriv API: BaseEventLoop.create_connection() got an unexpected keyword argument 'extra_headers'
+Traceback (most recent call last):
+  File "/home/runner/workspace/modules/api_connection.py", line 117, in connect
+    self.websocket = await websockets.connect(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/websockets/asyncio/client.py", line 541, in __await_impl__
+    self.connection = await self.create_connection()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/websockets/asyncio/client.py", line 467, in create_connection
+    _, connection = await loop.create_connection(factory, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseEventLoop.create_connection() got an unexpected keyword argument 'extra_headers'
+2025-03-02 14:53:48,782 - main - ERROR - Failed to connect to Deriv API
+2025-03-02 14:53:48,782 - main - INFO - Disconnected from API.
+2025-03-02 10:16:28,798 - api_test - INFO - Starting Deriv API connection tests
+2025-03-02 10:16:28,799 - api_test - WARNING - ENABLE_SIMULATION is set to true, but we'll disable it for this test
+2025-03-02 10:16:28,799 - api_test - INFO - === TESTING DEMO ACCOUNT ===
+2025-03-02 10:16:28,799 - api_test - INFO - Testing connection with demo account
+2025-03-02 10:16:28,799 - api_connection - INFO - Initialized API connection for demo account
+2025-03-02 10:16:28,800 - api_test - INFO - API Token diagnostic: Token length: 15 chars, Composition: 13 letters, 2 digits, 0 special chars, Format: Valid format, Token preview: VW2*********OGp
+2025-03-02 10:16:28,800 - api_test - INFO - Executing comprehensive API connection test...
+2025-03-02 10:16:28,800 - api_connection - INFO - Testing API connection...
+2025-03-02 10:16:28,801 - api_connection - INFO - API Token diagnostic: Token length: 15 chars, Composition: 13 letters, 2 digits, 0 special chars, Format: Valid format, Token preview: VW2*********OGp
+2025-03-02 10:16:28,801 - api_connection - INFO - Connecting to Deriv API (wss://ws.demo.derivapi.com/websockets/v3)...
+2025-03-02 10:16:29,258 - api_connection - ERROR - Failed to connect to Deriv API: [Errno 11001] getaddrinfo failed
+Traceback (most recent call last):
+  File "e:\Trading\DerivTrader\modules\api_connection.py", line 123, in connect
+    self.websocket = await websockets.connect(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Users\Wilson David\AppData\Local\Programs\Python\Python313\Lib\site-packages\websockets\legacy\client.py", line 650, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Wilson David\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\Wilson David\AppData\Local\Programs\Python\Python313\Lib\site-packages\websockets\legacy\client.py", line 654, in __await_impl__
+    transport, protocol = await self._create_connection()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Wilson David\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 1117, in create_connection
+    infos = await self._ensure_resolved(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        (host, port), family=family,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        type=socket.SOCK_STREAM, proto=proto, flags=flags, loop=self)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Wilson David\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 1500, in _ensure_resolved
+    return await loop.getaddrinfo(host, port, family=family, type=type,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                  proto=proto, flags=flags)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Wilson David\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 939, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        None, getaddr_func, host, port, family, type, proto, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Wilson David\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Wilson David\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2025-03-02 10:16:29,552 - api_test - INFO - 
+=== TEST SUMMARY ===
+2025-03-02 10:48:58,884 - api_test - INFO - Starting Deriv API connection tests
+2025-03-02 10:48:58,884 - api_test - WARNING - ENABLE_SIMULATION is set to true, but we'll disable it for this test
+2025-03-02 10:48:58,885 - api_test - INFO - === TESTING DEMO ACCOUNT ===
+2025-03-02 10:48:58,885 - api_test - INFO - Testing connection with demo account
+2025-03-02 10:48:58,885 - api_connection - INFO - Initialized API connection for demo account
+2025-03-02 10:48:58,885 - api_test - INFO - API Token diagnostic: Token length: 15 chars, Composition: 13 letters, 2 digits, 0 special chars, Format: Valid format, Token preview: VW2*********OGp
+2025-03-02 10:48:58,885 - api_test - INFO - Executing comprehensive API connection test...
+2025-03-02 10:48:58,886 - api_connection - INFO - Testing API connection...
+2025-03-02 10:48:58,886 - api_connection - INFO - API Token diagnostic: Token length: 15 chars, Composition: 13 letters, 2 digits, 0 special chars, Format: Valid format, Token preview: VW2*********OGp
+2025-03-02 10:48:58,886 - api_connection - INFO - Connecting to Deriv API (wss://ws.demo.derivapi.com/websockets/v3)...
+2025-03-02 10:48:59,019 - api_connection - ERROR - Failed to connect to Deriv API: BaseEventLoop.create_connection() got an unexpected keyword argument 'extra_headers'
+Traceback (most recent call last):
+  File "E:\Trading\DerivTrader\modules\api_connection.py", line 119, in connect
+    self.websocket = await websockets.connect(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "E:\Trading\DerivTrader\traderenv\Lib\site-packages\websockets\asyncio\client.py", line 541, in __await_impl__
+    self.connection = await self.create_connection()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Trading\DerivTrader\traderenv\Lib\site-packages\websockets\asyncio\client.py", line 467, in create_connection
+    _, connection = await loop.create_connection(factory, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+TypeError: BaseEventLoop.create_connection() got an unexpected keyword argument 'extra_headers'
+2025-03-02 10:48:59,101 - api_test - INFO - 
+=== TEST SUMMARY ===
+2025-03-02 10:52:47,318 - api_test - INFO - Starting Deriv API connection tests
+2025-03-02 10:52:47,319 - api_test - WARNING - ENABLE_SIMULATION is set to true, but we'll disable it for this test
+2025-03-02 10:52:47,319 - api_test - INFO - === TESTING DEMO ACCOUNT ===
+2025-03-02 10:52:47,319 - api_test - INFO - Testing connection with demo account
+2025-03-02 10:52:47,319 - api_connection - INFO - Initialized API connection for demo account
+2025-03-02 10:52:47,319 - api_test - INFO - API Token diagnostic: Token length: 15 chars, Composition: 13 letters, 2 digits, 0 special chars, Format: Valid format, Token preview: VW2*********OGp
+2025-03-02 10:52:47,320 - api_test - INFO - Executing comprehensive API connection test...
+2025-03-02 10:52:47,320 - api_connection - INFO - Testing API connection...
+2025-03-02 10:52:47,320 - api_connection - INFO - API Token diagnostic: Token length: 15 chars, Composition: 13 letters, 2 digits, 0 special chars, Format: Valid format, Token preview: VW2*********OGp
+2025-03-02 10:52:47,320 - api_connection - INFO - Connecting to Deriv API (wss://ws.demo.derivapi.com/websockets/v3)...
+2025-03-02 10:52:47,394 - api_connection - ERROR - Failed to connect to Deriv API: BaseEventLoop.create_connection() got an unexpected keyword argument 'extra_headers'
+Traceback (most recent call last):
+  File "E:\Trading\DerivTrader\modules\api_connection.py", line 119, in connect
+    self.websocket = await websockets.connect(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "E:\Trading\DerivTrader\traderenv\Lib\site-packages\websockets\asyncio\client.py", line 541, in __await_impl__
+    self.connection = await self.create_connection()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Trading\DerivTrader\traderenv\Lib\site-packages\websockets\asyncio\client.py", line 467, in create_connection
+    _, connection = await loop.create_connection(factory, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+TypeError: BaseEventLoop.create_connection() got an unexpected keyword argument 'extra_headers'
+2025-03-02 10:52:47,474 - api_test - INFO - 
+=== TEST SUMMARY ===
+2025-03-02 10:55:06,317 - api_test - INFO - Starting Deriv API connection tests
+2025-03-02 10:55:06,317 - api_test - WARNING - ENABLE_SIMULATION is set to true, but we'll disable it for this test
+2025-03-02 10:55:06,317 - api_test - INFO - === TESTING DEMO ACCOUNT ===
+2025-03-02 10:55:06,318 - api_test - INFO - Testing connection with demo account
+2025-03-02 10:55:06,318 - api_connection - INFO - Initialized API connection for demo account
+2025-03-02 10:55:06,318 - api_test - INFO - API Token diagnostic: Token length: 15 chars, Composition: 13 letters, 2 digits, 0 special chars, Format: Valid format, Token preview: VW2*********OGp
+2025-03-02 10:55:06,318 - api_test - INFO - Executing comprehensive API connection test...
+2025-03-02 10:55:06,318 - api_connection - INFO - Testing API connection...
+2025-03-02 10:55:06,318 - api_connection - INFO - API Token diagnostic: Token length: 15 chars, Composition: 13 letters, 2 digits, 0 special chars, Format: Valid format, Token preview: VW2*********OGp
+2025-03-02 10:55:06,319 - api_connection - INFO - Connecting to Deriv API (wss://ws.demo.derivapi.com/websockets/v3)...
+2025-03-02 10:55:06,391 - api_connection - ERROR - Failed to connect to Deriv API: BaseEventLoop.create_connection() got an unexpected keyword argument 'extra_headers'
+Traceback (most recent call last):
+  File "E:\Trading\DerivTrader\modules\api_connection.py", line 119, in connect
+    self.websocket = await websockets.connect(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "E:\Trading\DerivTrader\traderenv\Lib\site-packages\websockets\asyncio\client.py", line 541, in __await_impl__
+    self.connection = await self.create_connection()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Trading\DerivTrader\traderenv\Lib\site-packages\websockets\asyncio\client.py", line 467, in create_connection
+    _, connection = await loop.create_connection(factory, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+TypeError: BaseEventLoop.create_connection() got an unexpected keyword argument 'extra_headers'
+2025-03-02 10:55:06,482 - api_test - INFO - 
+=== TEST SUMMARY ===
+2025-03-02 10:58:44,683 - api_test - INFO - Starting Deriv API connection tests
+2025-03-02 10:58:44,683 - api_test - WARNING - ENABLE_SIMULATION is set to true, but we'll disable it for this test
+2025-03-02 10:58:44,684 - api_test - INFO - === TESTING DEMO ACCOUNT ===
+2025-03-02 10:58:44,684 - api_test - INFO - Testing connection with demo account
+2025-03-02 10:58:44,684 - api_connection - INFO - Initialized API connection for demo account
+2025-03-02 10:58:44,684 - api_test - INFO - API Token diagnostic: Token length: 15 chars, Composition: 13 letters, 2 digits, 0 special chars, Format: Valid format, Token preview: VW2*********OGp
+2025-03-02 10:58:44,684 - api_test - INFO - Executing comprehensive API connection test...
+2025-03-02 10:58:44,684 - api_connection - INFO - Testing API connection...
+2025-03-02 10:58:44,685 - api_connection - INFO - API Token diagnostic: Token length: 15 chars, Composition: 13 letters, 2 digits, 0 special chars, Format: Valid format, Token preview: VW2*********OGp
+2025-03-02 10:58:44,685 - api_connection - INFO - Connecting to Deriv API (wss://ws.demo.derivapi.com/websockets/v3)...
+2025-03-02 10:58:44,756 - api_connection - ERROR - Failed to connect to Deriv API: BaseEventLoop.create_connection() got an unexpected keyword argument 'extra_headers'
+Traceback (most recent call last):
+  File "E:\Trading\DerivTrader\modules\api_connection.py", line 119, in connect
+    self.websocket = await websockets.connect(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "E:\Trading\DerivTrader\traderenv\Lib\site-packages\websockets\asyncio\client.py", line 541, in __await_impl__
+    self.connection = await self.create_connection()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Trading\DerivTrader\traderenv\Lib\site-packages\websockets\asyncio\client.py", line 467, in create_connection
+    _, connection = await loop.create_connection(factory, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+TypeError: BaseEventLoop.create_connection() got an unexpected keyword argument 'extra_headers'
+2025-03-02 10:58:44,838 - api_test - INFO - 
+=== TEST SUMMARY ===
