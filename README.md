@@ -1,37 +1,18 @@
-# Deriv Trading Bot with 3 MA Strategy
+# DerivTrader
 
-A modular trading bot for Deriv.com implementing a three Moving Average strategy for automated trading. See [Technical Documentation](docs/documentation.md) for detailed implementation details.
+Automated trading system for derivatives markets.
 
-## Quick Start
+## Installation
 
-1. **Prerequisites**
-   - Python 3.10+
-   - Deriv.com account (demo/real)
-   - API tokens from Deriv.com
+```bash
+npm install
+```
 
-2. **Installation**
-   ```bash
-   git clone [your-repo-url]
-   cd DerivTrader
-   python -m venv traderenv
-   source traderenv/bin/activate  # On Windows: traderenv\Scripts\activate
-   pip install -r requirements.txt
-   ```
+## Usage
 
-3. **Configuration**
-   ```bash
-   cp config/.env.example .env
-   ```
-   Edit `.env` with your API tokens and settings. See [Environment Configuration](docs/documentation.md#environment-configuration) for details.
-
-4. **Run**
-   ```bash 
-   # Start trading
-   python __main__.py
-
-   # Run tests
-   pytest tests/
-   ```
+```bash
+npm start
+```
 
 ## Project Structure
 ```
@@ -61,8 +42,4 @@ See [Development Guidelines](docs/documentation.md#development-guidelines) for c
 
 ## License
 
-MIT License - See LICENSE file for details.
-
-## Disclaimer
-
-Trading involves risk of loss. This software is for educational purposes only. Test thoroughly in a demo account first. Past performance does not guarantee future results.
+MIT

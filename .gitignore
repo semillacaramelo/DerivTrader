@@ -9,3 +9,28 @@ wheels/
 # Virtual environments
 .venv
 .env
+
+# Dependencies
+node_modules/
+dist/
+build/
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# GitHub tokens
+.github-token
+*.token
